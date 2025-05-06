@@ -4,11 +4,93 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel = "stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tiny5&display=swap" rel="stylesheet">
 </head>
 <body>
-    <script src="project.js">
-        
-    </script>
-    
+    <div id = "scene-1">
+        <div class = "container">
+            <div class = "title-message">Welcome to the <br> <span class = "rps">Rock Paper Scissors</span> Olympic Games!</div>
+            <div class="container-1">
+                <div class = "character-selection">Choose your player!</div>
+                <div class = "characters">
+                    <div class = "btn-wrapper">
+                        <button id ="pomeranian">
+                            <img src = "images/1.png" alt = "pomeranian">
+                        </button>
+                    </div>
+                    <div class = "btn-wrapper">
+                        <button id = "shiba">
+                            <img src = 'images/2.png' alt = "shiba">
+                        </button>
+                    </div>
+                    <div class = "btn-wrapper">
+                        <button id = "dachshund">
+                            <img src = "images/3.png" alt = "dachshund">
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id = "scene-2">
+        <div class = "container" >
+            <div class = "left">
+                <div id = "player"></div>
+                <div class = "selection player-selection">
+                    <div class = "btn-wrapper">
+                        <button class = "rock">
+                            <img src = "images/rock.png" alt ="rock">
+                        </button>
+                    </div>
+                    <div class = "btn-wrapper">
+                        <button class = "paper">
+                            <img src = "images/paper.png" alt = "paper">
+                        </button>
+                    </div>
+                    <div class = "btn-wrapper">
+                        <button class = "scissors">
+                            <img src = "images/scissors.png" alt = "scissors">
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+            <div class = "center">
+                <button id = "reset-button"></button>
+                <div class = "score-board">0 : 0</div>
+                <div class = "message-box">
+                    <div class = "animated-messages">
+                            <div class = "instructions">First to 5 wins!</div>
+                            <div class = "win">You win <br> a point!</div>
+                            <div class = "lose">The Golden Retriever <br> scores a point!</div>
+                            <div class = "draw">Draw!</div>
+                            <div class = "player-victory">The gold medal <br> goes to you!</div>
+                            <div class = "cpu-victory">The gold medal <br> goes to <br> the golden retriever!</div>
+                    </div>
+                </div>
+            </div>
+            <div class = "right">
+                <div class = "selection">
+                    <button class = "rock">
+                        <img src = "images/rock.png" alt ="rock">
+                    </button>
+                    <button class = "paper">
+                        <img src = "images/paper.png" alt = "paper">
+                    </button>
+                    <button class = "scissors">
+                        <img src = "images/scissors.png" alt = "scissors">
+                    </button>
+                </div>
+                <div class = "cpu">
+                    <img src = "images/4.png" alt = "golden retriever with a hat" class = "golden">
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
+
+<script src="project.js"> </script>
 </html>
